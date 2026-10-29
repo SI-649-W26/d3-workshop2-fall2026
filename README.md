@@ -70,7 +70,9 @@ git push
 
 **Participation answer** (3 sentences): which driver's strategy differed most from the winner's, and what on the chart shows it?
 
->
+> STR changed his tires the most compared to the winner, VER.  
+VER had a simple two-step plan: he used medium tires first, then switched to hard tires.   STR did something completely different and used three different types of tires. 
+You can easily see three separate blocks of color on his row—red, grey, and yellow—while VER only has two.    
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
