@@ -91,8 +91,12 @@ onRaceChange(race => {
     maxLap = race.maxLap
 
     // TODO STEP 1: Create the scales
-    const y = // use d3.scaleBand() and race.drivers from the data
-    x = // use d3.scaleLinear() and race.maxLap from the data; don't add const
+    const y = d3.scaleBand()
+        .domain(race.drivers.map(d => d.driver_number))
+        .range([margin.top, height - margin.bottom]);
+    x = d3.scaleLinear()
+        .domain(0, race.maxLap)
+        .range([margin.left, width - margin.right]);
 
     const acronym = new Map(race.drivers.map(d => [d.driver_number, d.name_acronym]));
 
@@ -169,7 +173,7 @@ onRaceChange(race => {
 
 // TODO 12 (assignment): chart 3 announces the driver under the mouse.
 // Listen to it and fade the other drivers' bars
-listen('hoverDriver', driverNumber => {
-    barsGroup.selectAll('g.stint')
-        .attr('opacity', d => /* 1 for that driver (and for everyone when driverNumber is null), 0.25 for the others */);
-});
+//listen('hoverDriver', driverNumber => {
+//    barsGroup.selectAll('g.stint')
+//        .attr('opacity', d => /* 1 for that driver (and for everyone when driverNumber is null), 0.25 for the others */);
+//});
