@@ -16,7 +16,7 @@ import { onRaceChange } from './data.js';
 
 // No animation on the first draw (page load); after that, transitions take 750 ms.
 // Use .transition().duration(duration), and set duration = 750 at the end of each draw.
-let duration = 0;
+let duration = 1;
 
 
 // ============================================================================
