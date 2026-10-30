@@ -70,7 +70,7 @@ git push
 
 **Participation answer** (3 sentences): which driver's strategy differed most from the winner's, and what on the chart shows it?
 
->
+>The driver whose strategy differed most from the winner's is STR, who finished in last place. VER, the driver in first place, started on Medium for around 40% of the race and moved on to Hard for the remaining 60% according to the chart. On the other hand, STR in last place started on Soft for approximately 20% of the race, switched to Hard for the next 40% of the race, and finished on Medium for the remaining 40% of the race.
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
