@@ -63,10 +63,11 @@ const line = d3.line().curve(d3.curveCatmullRomClosed.alpha(0.5))
 onRaceChange(race => {
     const points = race.outline;
     console.log('Outline points:', points.length, points.slice(0, 3));
+    
 
     // TODO STEP 1: How big is the track? Use d3.extent to get [min, max] of x and of y
     const xRange = d3.extent(points, d => d[0]); //[0, 20000]
-    const yRange = d3.extent(points, d => d[1]);
+    const yRange = d3.extent(points, d=> d[1]);
 
     const trackWidth = xRange[1] - xRange[0];
     const trackHeight = yRange[1] - yRange[0];
@@ -76,13 +77,13 @@ onRaceChange(race => {
     // k is the min value between two values:
     // screen width - left and right padding over the track width
     // screen height - top and bottom padding over the track height
-    const k = Math.min((width - padding * 2) / trackWidth, (height - padding * 2));
+    const k = Math.min((width - padding*2)/trackWidth, (height-padding*2)/trackHeight);
 
     // TODO STEP 3: Center the track 
     // Right now the track would start from the top left corner of the canvas
     // We need to create an offset to start from the center
-    const offsetX = (width - k * trackWidth) / 2;
-    const offsetY = (height - k * trackHeight) / 2;
+    const offsetX = (width - k*trackWidth)/2;
+    const offsetY = (height - k*trackHeight)/2;
     
     
     // TODO STEP 4: Build scales x and y, using scale factor x
@@ -100,6 +101,8 @@ onRaceChange(race => {
     // TODO STEP 6: Use a transition so the old circuit morphs into the new one when the race changes:
     track.transition().duration(duration).attr('d', line(screenPoints))
     // ...and at the end of this function: duration = 750;
+    track.transition().duration(duration).attr('d', line(screenPoints));
+
 
     // TODO STEP 7: move the start/finish dot and label to the first point of the lap
     const [startX, startY] = screenPoints[0];
@@ -111,6 +114,8 @@ onRaceChange(race => {
     // Update the aria-label of the svg with the race name
     svg.attr('aria-label', `Track outline of the ${race.label}`);
     replayDot.interrupt().attr('opacity', 0);
+
+    duration = 750;
 });
 
 
@@ -149,3 +154,4 @@ replayButton.on('click', () => {
         .on('end interrupt', () => replayButton.property('disabled', false));
 
 });
+
