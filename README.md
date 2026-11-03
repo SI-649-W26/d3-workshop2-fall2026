@@ -76,7 +76,7 @@ You can easily see three separate blocks of color on his row—red, grey, and ye
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
->
+>In the 2025 Dutch Grand Prix, the race trace shows how far each driver was ahead of or behind Verstappen during the race. It shows how the gaps suddenly changed around certain laps and how some drivers fell further behind over time. A regular lap-time chart would make it harder to see how these time differences added up throughout the race.
 
 **Bonus** (optional): which race did you add, and why?
 
