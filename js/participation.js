@@ -147,7 +147,7 @@ onRaceChange(race => {
 
     // TODO STEP 5: Put the compound letter in the middle of each bar
     groups.select('text')
-        .attr('class', d => `stint-letter ${d.compound.toLowerCase()}-letter`)
+        .attr('class', d => `stint-letter ${d.compound}-letter`)
         .text(d => d.compound[0]/* Define the letter: the first character of the compound */)
         .transition().duration(duration)
         .attr('x', d => (x(d.lap_start - 1) + x(d.lap_end)) / 2/* Define x: the middle of the bar */)
