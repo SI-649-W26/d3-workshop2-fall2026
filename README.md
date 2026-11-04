@@ -74,7 +74,7 @@ git push
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
->I chose the Belgian Grand Prix and used Hamilton as the reference driver. The race trace shows that Norris and Piastri gradually gained time on Hamilton, with some large changes around laps 40 to 44. A regular lap time chart would make it harder to see how these small differences add up over the race.
+>I chose the British Grand Prix 2025 and used Hamilton as the reference driver. The race trace shows that Norris and Piastri slowly gained time on Hamilton between laps 21 and 41, even though the differences in each lap were small. There are also some big changes around laps 37 to 44 because the drivers made pit stops at different times. A normal lap time chart would make it harder to notice these small differences and see how the time gaps changed throughout the race.
 
 **Bonus** (optional): which race did you add, and why?
 
