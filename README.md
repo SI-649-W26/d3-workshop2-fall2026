@@ -70,15 +70,15 @@ git push
 
 **Participation answer** (3 sentences): which driver's strategy differed most from the winner's, and what on the chart shows it?
 
->
+>In the first race, Hamilton had the most different tyre strategy from Verstappen because he started on hard tyres and switched to medium tyres, while Verstappen did the opposite. In the second race, Russell had a very different strategy from Norris because he used hard and intermediate tyres instead of starting on intermediate tyres and finishing on medium tyres. In the third race, Piastri used medium and hard tyres, while Verstappen used soft, medium, and soft tyres, so their strategies were quite different.
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
->
+>I chose the Belgian Grand Prix and used Hamilton as the reference driver. The race trace shows that Norris and Piastri gradually gained time on Hamilton, with some large changes around laps 40 to 44. A regular lap time chart would make it harder to see how these small differences add up over the race.
 
 **Bonus** (optional): which race did you add, and why?
 
->
+>I used data from OpenF1 to add content regarding the 2025 Monaco Grand Prix—a race that stands out for its unique street circuit, which features many tight corners. It is also the only race I’m familiar with; I once tried driving this track with friends at a racing simulator center, and it left a strong impression on me.
 
 ---
 
