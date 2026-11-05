@@ -75,8 +75,8 @@ const brush = d3.brushX()
         const [x0, x1] = event.selection.map(x.invert/* Specify the scale function that turns pixels back into laps */);
 
         // A bar for lap n spans from n - 1 to n on the x scale, so:
-        const firstLap = Math.max(Math.floor(x0), 1)// round x0 down and add 1, but never below lap 1 (Math.floor, Math.max)
-        const lastLap = Math.min(Math.max(Math.ceil(x1), firstLap + 1), maxLap) // round x1 up, at least firstLap + 1, but never above maxLap (Math.ceil, Math.min)
+        const firstLap = Math.max(Math.floor(x0) + 1, 1)// round x0 down and add 1, but never below lap 1 (Math.floor, Math.max)
+        const lastLap = Math.min(Math.ceil(x1), maxLap) // round x1 up, at least firstLap + 1, but never above maxLap (Math.ceil, Math.min)
 
         announce('lapRange', [firstLap, lastLap]);
     });
@@ -180,7 +180,7 @@ onRaceChange(race => {
 
 // TODO 12 (assignment): chart 3 announces the driver under the mouse.
 // Listen to it and fade the other drivers' bars
-// listen('hoverDriver', driverNumber => {
-//     barsGroup.selectAll('g.stint')
-//         .attr('opacity', d => /* 1 for that driver (and for everyone when driverNumber is null), 0.25 for the others */);
-// });
+listen('hoverDriver', driverNumber => {
+    barsGroup.selectAll('g.stint')
+        .attr('opacity', d => driverNumber === null || d.driver_number === driverNumber ? 1 : 0.25/* 1 for that driver (and for everyone when driverNumber is null), 0.25 for the others */);
+});
