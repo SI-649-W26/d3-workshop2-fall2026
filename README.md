@@ -70,7 +70,7 @@ git push
 
 **Participation answer** (3 sentences): which driver's strategy differed most from the winner's, and what on the chart shows it?
 
->
+> For the British Grand Prix, the winner used Intermediate tires until the end of the race, where they switched to medium. The person who differed the most from this strategy was RUS, who started with hard, and instead of switching to medium at the end of the race switched to hard, and did so sooner than the winner switched to medium. For the Japanese Grand Prix, STR, who got last place, differed the most from the winning strategy by reversing the use of hard and medium tires and also including a stint of soft tires in the beginning. For the Dutch Grand Prix, second place (VER) differed the most, as the only driver who never matched the type of tires the winner was using at the same time.
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
