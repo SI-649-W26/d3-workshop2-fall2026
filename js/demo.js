@@ -89,17 +89,17 @@ onRaceChange(race => {
     // TODO STEP 4: Build scales x and y, using scale factor x
     const x = d3.scaleLinear()
         .domain(xRange)
-        .range([offsetX, offsetX + k*trackWidth]);
+        .range([offsetX, offsetX + k * trackWidth ]);
 
     const y = d3.scaleLinear()
         .domain(yRange)
-        .range([height-offsetY, height - offsetY - k*trackHeight]); // Remember: SVG y points DOWN, so flip the range of y (otherwise the circuit is mirrored)
+        .range([height - offsetY, height - offsetY - k * trackHeight]); // Remember: SVG y points DOWN, so flip the range of y (otherwise the circuit is mirrored)
     
     // TODO STEP 5: convert the points to screen positions and set the path's "d" attribute
     const screenPoints = points.map(d => [x(d[0]), y(d[1])]);
 
     // TODO STEP 6: Use a transition so the old circuit morphs into the new one when the race changes:
-    // track.transition().duration(duration).attr('d', ...)
+    track.transition().duration(duration).attr('d', line(screenPoints))
     // ...and at the end of this function: duration = 750;
     track.transition().duration(duration).attr('d', line(screenPoints));
 
@@ -109,7 +109,7 @@ onRaceChange(race => {
     // startDot is a circle, so it means we need to define cx, cy
     startDot.transition().duration(duration).attr('cx', startX).attr('cy', startY);
     // startLabel is a text, we need to define x and y
-    startDot.transition().duration(duration).attr('x', startX + 12).attr('y', startY - 10);
+    startLabel.transition().duration(duration).attr('x', startX + 12).attr('y', startY - 10);
 
     // Update the aria-label of the svg with the race name
     svg.attr('aria-label', `Track outline of the ${race.label}`);
