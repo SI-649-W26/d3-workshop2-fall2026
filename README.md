@@ -74,7 +74,7 @@ git push
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
->
+>In the displayed race, the race trace shows the fluctuations in time for the drivers relative to the reference driver that a plain chart would hide. For instance, if we choose Max VERSTAPPEN as the reference driver, we can see that nearly all drivers gained time in comparison between laps 21 and 22. That change in relative time would be hidden in a plain chart.
 
 **Bonus** (optional): which race did you add, and why?
 
